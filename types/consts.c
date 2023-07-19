@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <locale.h>
 
-// Пишем свою strlen
+// РџРёС€РµРј СЃРІРѕСЋ strlen
 int strlen(char s[]) {
     int i = 0;
     while (s[i] != '\0') {
@@ -11,20 +11,20 @@ int strlen(char s[]) {
 }
 
 int main() {
-    // Подключаем русский язык
+    // РџРѕРґРєР»СЋС‡Р°РµРј СЂСѓСЃСЃРєРёР№ СЏР·С‹Рє
     setlocale(LC_ALL, "");
 
-    // Объявляем констату
+    // РћР±СЉСЏРІР»СЏРµРј РєРѕРЅСЃС‚Р°С‚Сѓ
     #define BLA_BLA_STRING "Salam!"
 
-    // Объявляем перечисление и используем его
+    // РћР±СЉСЏРІР»СЏРµРј РїРµСЂРµС‡РёСЃР»РµРЅРёРµ Рё РёСЃРїРѕР»СЊР·СѓРµРј РµРіРѕ
     enum escapes { NEWLINE = '\n', TAB = '\t' };
     enum escapes c = NEWLINE;
 
-    printf("Длинна строки \"%s\" = %i%c", BLA_BLA_STRING, strlen(BLA_BLA_STRING), c);
+    printf("Р”Р»РёРЅРЅР° СЃС‚СЂРѕРєРё \"%s\" = %i%c", BLA_BLA_STRING, strlen(BLA_BLA_STRING), c);
 
-    const int age = 99; // Гарантируем что age не изменится
-    // age = 100; // Должна быть ошибка
+    const int age = 99; // Р“Р°СЂР°РЅС‚РёСЂСѓРµРј С‡С‚Рѕ age РЅРµ РёР·РјРµРЅРёС‚СЃСЏ
+    // age = 100; // Р”РѕР»Р¶РЅР° Р±С‹С‚СЊ РѕС€РёР±РєР°
 
     return 0;
 }
