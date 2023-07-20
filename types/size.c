@@ -6,7 +6,7 @@
 
 int main (void) {
     // Подключаем русский язык
-    setlocale(LC_ALL, "");
+    setlocale(LC_ALL, "ru-RU");
 
     // Базовые типы
     printf("Вывод базовых типов данных:\n");
